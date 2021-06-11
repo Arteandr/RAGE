@@ -11,3 +11,5 @@ build/
 BugTrap-x64.dll
 ragemp-server.exe
 runtime/
+server_logs.txt
+server_exceptions.txt
