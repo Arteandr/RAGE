@@ -1,0 +1,5 @@
+<meta>
+	<info name="Gamemode" author="hwndrer" type="gamemode" shadowcopy="true" />
+
+	<script src="Server/Core/bin/Debug/net5.0/Gamemode.Server.Core.dll" />
+</meta>

@@ -1,0 +1,13 @@
+*.ide
+*.suo
+.vs
+dist
+obj
+packages
+bin
+node_modules
+build/
+*.env
+BugTrap-x64.dll
+ragemp-server.exe
+runtime/
