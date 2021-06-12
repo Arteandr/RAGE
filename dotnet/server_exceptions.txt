@@ -1,0 +1,593 @@
+
+==================[12.06.2021 0:48:38]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10035): Операция на незаблокированном сокете не может быть завершена немедленно. 34.107.71.54:5432
+   at void System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+   at bool Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(bool errorsExpected)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+   at bool Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(bool errorsExpected)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "admsin"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+   at bool Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(bool errorsExpected)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "admsin"
+    File: auth.c
+    Line: 334
+    Routine: auth_failed
+=========================================================
+
+==================[12.06.2021 0:48:38]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> Npgsql.Postg
+==================[12.06.2021 1:06:10]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10035): Операция на незаблокированном сокете не может быть завершена немедленно. 35.238.176.103:5432
+   at void System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+=========================================================
+
+==================[12.06.2021 1:06:24]==================
+System.TimeoutException: Timeout during connection attempt
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+=========================================================
+
+==================[12.06.2021 1:06:25]==================
+Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+=========================================================
+
+==================[12.06.2021 1:06:25]==================
+Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at async Task Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+=========================================================
+
+==================[12.06.2021 1:06:25]==================
+Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at async Task Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[12.06.2021 1:06:25]==================
+Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at async Task Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+=========================================================
+
+==================[12.06.2021 1:06:25]==================
+Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at async Task Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[12.06.2021 1:06:25]==================
+Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at async Task Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+=========================================================
+
+==================[12.06.2021 1:06:25]==================
+Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at async Task Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[12.06.2021 1:06:25]==================
+Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at async Task Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[12.06.2021 1:06:25]==================
+Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at async Task Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+=========================================================
+
+==================[12.06.2021 1:06:25]==================
+Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at async Task Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[12.06.2021 1:06:25]==================
+Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at async Task Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+=========================================================
+
+==================[12.06.2021 1:06:25]==================
+Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at async Task Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+   at bool Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(bool errorsExpected)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[12.06.2021 1:06:25]==================
+Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at void Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at async Task Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgs
+==================[12.06.2021 1:08:46]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10035): Операция на незаблокированном сокете не может быть завершена немедленно. 35.238.176.103:5432
+   at void System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+=========================================================
+
+==================[12.06.2021 1:08:46]==================
+Npgsql.PostgresException (0x80004005): 3D000: database "server" does not exist
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+  Exception data:
+    Severity: FATAL
+    SqlState: 3D000
+    MessageText: database "server" does not exist
+    File: postinit.c
+    Line: 889
+    Routine: InitPostgres
+=========================================================
+
+==================[12.06.2021 1:08:46]==================
+Npgsql.PostgresException (0x80004005): 3D000: database "server" does not exist
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+  Exception data:
+    Severity: FATAL
+    SqlState: 3D000
+    MessageText: database "server" does not exist
+    File: postinit.c
+    Line: 889
+    Routine: InitPostgres
+=========================================================
+
+==================[12.06.2021 1:08:46]==================
+Npgsql.PostgresException (0x80004005): 3D000: database "server" does not exist
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 3D000
+    MessageText: database "server" does not exist
+    File: postinit.c
+    Line: 889
+    Routine: InitPostgres
+=========================================================
+
+==================[12.06.2021 1:08:46]==================
+Npgsql.PostgresException (0x80004005): 3D000: database "server" does not exist
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+  Exception data:
+    Severity: FATAL
+    SqlState: 3D000
+    MessageText: database "server" does not exist
+    File: postinit.c
+    Line: 889
+    Routine: InitPostgres
+=========================================================
+
+==================[12.06.2021 1:08:46]==================
+Npgsql.PostgresException (0x80004005): 3D000: database "server" does not exist
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 3D000
+    MessageText: database "server" does not exist
+    File: postinit.c
+    Line: 889
+    Routine: InitPostgres
+=========================================================
+
+==================[12.06.2021 1:08:46]==================
+Npgsql.PostgresException (0x80004005): 3D000: database "server" does not exist
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+  Exception data:
+    Severity: FATAL
+    SqlState: 3D000
+    MessageText: database "server" does not exist
+    File: postinit.c
+    Line: 889
+    Routine: InitPostgres
+=========================================================
+
+==================[12.06.2021 1:08:46]==================
+Npgsql.PostgresException (0x80004005): 3D000: database "server" does not exist
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 3D000
+    MessageText: database "server" does not exist
+    File: postinit.c
+    Line: 889
+    Routine: InitPostgres
+=========================================================
+
+==================[12.06.2021 1:08:46]==================
+Npgsql.PostgresException (0x80004005): 3D000: database "server" does not exist
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 3D000
+    MessageText: database "server" does not exist
+    File: postinit.c
+    Line: 889
+    Routine: InitPostgres
+=========================================================
+
+==================[12.06.2021 1:08:46]==================
+Npgsql.PostgresException (0x80004005): 3D000: database "server" does not exist
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+  Exception data:
+    Severity: FATAL
+    SqlState: 3D000
+    MessageText: database "server" does not exist
+    File: postinit.c
+    Line: 889
+    Routine: InitPostgres
+=========================================================
+
+==================[12.06.2021 1:08:46]==================
+Npgsql.PostgresException (0x80004005): 3D000: database "server" does not exist
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode
