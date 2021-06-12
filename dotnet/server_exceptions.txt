@@ -591,3 +591,672 @@ Npgsql.PostgresException (0x80004005): 3D000: database "server" does not exist
 ==================[12.06.2021 1:08:46]==================
 Npgsql.PostgresException (0x80004005): 3D000: database "server" does not exist
    at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode
+==================[12.06.2021 21:57:16]==================
+System.InvalidOperationException: No suitable constructor was found for entity type 'Player'. The following constructors had parameters that could not be bound to properties of the entity type: cannot bind 'handle' in 'Player(NetHandle handle)'.
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.ConstructorBindingConvention.ProcessModelFinalizing(IConventionModelBuilder modelBuilder, IConventionContext<IConventionModelBuilder> context)
+=========================================================
+
+==================[12.06.2021 21:57:16]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.InvalidOperationException: No suitable constructor was found for entity type 'Player'. The following constructors had parameters that could not be bound to properties of the entity type: cannot bind 'handle' in 'Player(NetHandle handle)'.
+   at void Microsoft.EntityFrameworkCore.Metadata.Conventions.ConstructorBindingConvention.ProcessModelFinalizing(IConventionModelBuilder modelBuilder, IConventionContext<IConventionModelBuilder> context)
+   at IConventionModelBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher+ImmediateConventionScope.OnModelFinalizing(IConventionModelBuilder modelBuilder)
+   at IConventionModelBuilder Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelFinalizing(IConventionModelBuilder modelBuilder)
+   at IModel Microsoft.EntityFrameworkCore.Metadata.Internal.Model.FinalizeModel()
+   at IModel Microsoft.EntityFrameworkCore.ModelBuilder.FinalizeModel()
+   at IModel Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder, ModelDependencies modelDependencies)
+   at IModel Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, IConventionSetBuilder conventionSetBuilder, ModelDependencies modelDependencies)
+   at IModel Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at IModel Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at EntityFrameworkServicesBuilder Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.TryAddCoreServices()+(IServiceProvider p) => { } [3]
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverConte
+==================[13.06.2021 0:58:48]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10035): Операция на незаблокированном сокете не может быть завершена немедленно. 35.238.176.103:5432
+   at void System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+   at bool Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(bool errorsExpected)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+   at bool Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(bool errorsExpected)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+   at bool Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(bool errorsExpected)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 0:58:49]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+   at bool Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(bool errorsExpected)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+   at bool Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists()
+   at bool Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreated()
+   at bool Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at new Gamemode.Server.Database.AppDbContext() in C:/RAGEMP/server-files/dotnet/resources/gamemode/Server/Database/AppDbContext.cs:line 11
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Func<ServiceProviderEngineScope, object> Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.RealizeService(ServiceCallSite callSite)+(ServiceProviderEngineScope scope) => { } [0]
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.Servic
+==================[13.06.2021 1:00:42]==================
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10035): Операция на незаблокированном сокете не может быть завершена немедленно. 35.238.176.103:5432
+   at void System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+=========================================================
+
+==================[13.06.2021 1:00:42]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:42]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:42]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:42]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:42]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:43]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:43]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:43]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:43]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:43]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:43]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:43]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:43]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:43]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+   at bool Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(bool errorsExpected)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:43]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+   at bool Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(bool errorsExpected)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:43]==================
+Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+   at bool Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(bool errorsExpected)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: auth.c
+    Line: 347
+    Routine: auth_failed
+=========================================================
+
+==================[13.06.2021 1:00:43]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at async ValueTask<IBackendMessage> Npgsql.NpgsqlConnector.ReadMessage(bool async, DataRowLoadingMode dataRowLoadingMode, bool readingNotifications)+ReadMessageLong(?)
+   at async Task Npgsql.NpgsqlConnector.AuthenticateMD5(string username, byte[] salt, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Authenticate(string username, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async Task Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at async ValueTask<NpgsqlConnector> Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, bool async, CancellationToken cancellationToken)
+   at void Npgsql.ConnectorPool+<>c__DisplayClass38_0+<<Rent>g__RentAsync|0>d.MoveNext()
+   at TResult System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>.GetResult()
+   at void Npgsql.NpgsqlConnection+<>c__DisplayClass41_0+<<Open>g__OpenAsync|0>d.MoveNext()
+   at void Npgsql.NpgsqlConnection.Open()
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(bool errorsExpected)
+   at void Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(bool errorsExpected)
+   at bool Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(bool errorsExpected)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+   at async Task<bool> Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(bool async, CancellationToken cancellationToken)
+   at bool Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists()
+   at bool Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreated()
+   at bool Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at new Gamemode.Server.Database.AppDbContext() in C:/RAGEMP/server-files/dotnet/resources/gamemode/Server/Database/AppDbContext.cs:line 11
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at TResult Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor<TArgument, TResult>.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Func<ServiceProviderEngineScope, object> Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.RealizeService(ServiceCallSite callSite)+(ServiceProviderEngineScope scope) => { } [0]
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at object Microsoft.Extensions.DependencyInjection.ServiceLookup.Servic
