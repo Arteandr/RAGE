@@ -1,4 +1,5 @@
-﻿using Gamemode.Server.Handler.Events;
+﻿using Gamemode.Server.Handler;
+using Gamemode.Server.Handler.Events;
 using Gamemode.Server.Handler.PlayerHandlers;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,7 +12,8 @@ namespace Gamemode.Server.Core.Creators
         {
             return serviceCollection
                 .WithEvents()
-                .WithPlayers();
+                .WithPlayers()
+                .WithMisc();
         }
 
         private static IServiceCollection WithPlayers(this IServiceCollection serviceCollection)
@@ -24,6 +26,12 @@ namespace Gamemode.Server.Core.Creators
         {
             return serviceCollection
                 .AddSingleton<EventsHandler>();
+        }
+
+        private static IServiceCollection WithMisc(this IServiceCollection serviceCollection)
+        {
+            return serviceCollection
+                .AddSingleton<TimerHandler>();
         }
     }
 }

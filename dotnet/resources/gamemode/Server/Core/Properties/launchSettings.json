@@ -2,8 +2,8 @@
   "profiles": {
     "Gamemode_Server.Core": {
       "commandName": "Executable",
-      "executablePath": "C:\\RAGEMP\\server-files\\ragemp-server.exe",
-      "workingDirectory": "C:\\RAGEMP\\server-files"
+      "executablePath": "C:\\Users\\Arteandr\\Desktop\\server-files\\ragemp-server.exe",
+      "workingDirectory": "C:\\Users\\Arteandr\\Desktop\\server-files"
     }
   }
 }

@@ -2,6 +2,7 @@
 using Gamemode.Server.Core.Creators;
 using Gamemode.Server.Data.Utils;
 using Gamemode.Server.Database;
+using Gamemode.Server.Handler.Events;
 using GTANetworkAPI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,6 +31,13 @@ namespace Gamemode.Server.Core
 
 
             _serviceProvider.InitAllSingletons();
+
+            var eventsHandler = _serviceProvider.GetRequiredService<EventsHandler>();
+            eventsHandler.Minute += (_) =>
+            {
+                var date = DateTime.UtcNow;
+                NAPI.World.SetTime(date.Hour, date.Minute, date.Second);
+            };
         }
 
         private void NapiInit()

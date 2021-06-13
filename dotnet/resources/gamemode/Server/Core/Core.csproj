@@ -24,7 +24,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-	  <OutputPath>C:\RAGEMP\server-files\dotnet\runtime\</OutputPath>
+	  <OutputPath>C:\Users\Arteandr\Desktop\server-files\dotnet\runtime\</OutputPath>
 	</PropertyGroup>
 
 
@@ -35,7 +35,7 @@
 
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-	  <Exec Command="del C:\RAGEMP\server-files\dotnet\runtime\Gamemode.Server.Core.deps.json" />
+	  <Exec Command="del C:\Users\Arteandr\Desktop\server-files\dotnet\runtime\Gamemode.Server.Core.deps.json" />
 	</Target>
 
 </Project>

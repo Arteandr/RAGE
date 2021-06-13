@@ -16,5 +16,6 @@ namespace Gamemode.Server.Database.Account
         public string SocialClubName { get; set; }
         public ulong SocialClubId { get; set; }
         public uint Donation { get; set; }
+        public string RegistrationIp { get; set; }
     }
 }
